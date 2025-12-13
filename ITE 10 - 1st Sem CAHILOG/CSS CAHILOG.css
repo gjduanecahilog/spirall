@@ -1,0 +1,545 @@
+/* Write CSS Here */
+/* Styles defined for the desktop or the bigger screen devices*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ECF0F1;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #2C3E50;
+}
+
+/* Header Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(90deg, #5C3A21, #F28C28);
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.logo {
+    padding: 0 5rem;
+}
+
+.logo .logo-heading {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.menu {
+    padding: 0 5rem;
+}
+
+.hamburger {
+    display: none;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.cross-icon {
+    display: none;
+}
+
+.menu .menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list .menu-list-items {
+    padding: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .menu-list .menu-list-items {
+        padding: 0.5rem 0.3rem;
+    }
+}
+
+/* Main Hero Section Styles */
+.home {
+    background-image: url('meh.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 5rem;
+    margin: 0;
+}
+
+.home .intro {
+    text-align: center;
+    margin: 0 5rem;
+}
+
+/* Updated Button Layout */
+.home .intro-buttons {
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+section {
+    scroll-margin-top: 140px;
+}
+
+/* Button Animations + Hover Effects */
+.btn {
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 600
+}
+
+.common-btn {
+    background-color: #FFFFFF;
+    color: #F28C28;
+    border: 2px solid #F28C28;
+}
+
+.common-btn:hover {
+    background-color: #F28C28;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.ghost-btn {
+    background-color: transparent;
+    color: #5C3A21;
+    border: 2px solid #5C3A21;
+}
+
+.ghost-btn:hover {
+    background-color: #5C3A21;
+    color: #FAFAFA;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.project-tech-tags {
+    font-size: 13px;
+    color: #16A085; /* Highlighted color */
+    margin: 10px 0 15px 0; /* Space above and below */
+}
+
+/* Container for the buttons */
+.project-links {
+    display: flex;
+    flex-direction: column; 
+    /* NEW: Centers the stacked buttons horizontally inside the card */
+    align-items: center; 
+    gap: 10px; 
+    width: 100%; /* Keep this to span the full width of the parent column */
+    margin-top: auto; 
+    padding-top: 15px;
+}
+
+/* Make the links smaller within the cards */
+.small-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    /* NEW: Set a maximum width and center the button's text */
+    max-width: 200px; /* Adjust this value (e.g., 200px) to control button width */
+    width: 90%; /* Use a percentage for responsiveness, capped by max-width */
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(135deg, #F28C28, #993300);
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about .about-text {
+    width: 450px;
+    color: #FAFAFA;
+    padding: 5rem 1rem 5rem 5rem;
+}
+
+.about .about-image img {
+    height: 400px;
+    width: 450px;
+    padding: 5rem 5rem 5rem 1rem;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Projects section styles */
+.projects {
+    margin: 4.8rem 0;
+    padding: 0 5rem;
+}
+
+.port-card {
+    padding: 0 !important;
+    background: #FAFAFA !important;
+    border: 2px solid #BDC3C7;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.project-tech-tags {
+    font-size: 13px;
+    color: #16A085;
+    margin: 10px 0 15px 0; 
+    /* To visually center a narrow text block, you might need a wrapper div */
+    /* For now, just centering the text inside the card should work for short lines. */
+}
+
+/* Container for the buttons (Stacked, Narrow, Centered) */
+.project-links {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers the stacked buttons horizontally inside the card */
+    gap: 10px; 
+    width: 100%;
+    margin-top: auto; 
+    padding-top: 15px; 
+}
+
+/* Make the links smaller within the cards (Fixed width and centered) */
+.small-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    max-width: 200px; /* Controls button width */
+    width: 90%; 
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+/* Projects section styles */
+.projects {
+    margin: 4.8rem 0;
+    padding: 0 5rem;
+}
+
+.port-card {
+    padding: 0 !important;
+    background: #FAFAFA !important;
+    border: 2px solid #BDC3C7;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align: center; 
+}
+
+.port-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+}
+
+.port-card .image {
+    width: 100%;
+}
+
+.port-card .image img {
+    height: 200px;
+    width: 100%;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+/* Skills section styles */
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4.8rem 0;
+    padding: 0 5rem;
+}
+
+.my-row {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.my-row .my-col {
+    text-align: center;
+    width: 31%;
+    margin: 0 1%;
+}
+
+.my-card {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    height: 100%;
+}
+
+.icon {
+    margin: 0 auto 1.5rem auto; 
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color:  #E67E22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* New Progress Bar Styling */
+.skill-bar-container {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2C3E50;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ECF0F1; /* Light gray track */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-level {
+    height: 100%;
+    background-color: #E67E22; /* Accent 2 color for fill */
+    transition: width 1s ease-in-out;
+}
+
+/* Soft Skills / Hobbies list styling */
+.soft-skills-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.soft-skills-list li {
+    background-color: #ECF0F1; /* Light background for list item */
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #2C3E50;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid #16A085; /* Accent line */
+}
+
+.soft-skills-list li i {
+    color: #16A085;
+    margin-right: 10px;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 0 5rem;
+    margin-bottom: 5rem;
+}
+
+.contact-content {
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contact-form-container {
+    width: 50%;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .form-controls {
+    width: 100%;
+    padding: 15px;
+    margin: 0.8rem 0;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+textarea.form-controls {
+    resize: vertical;
+}
+
+.contact-form .form-btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact-details {
+    width: 40%;
+    padding: 30px 0;
+}
+
+.details {
+    margin: 1.5rem 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #BDC3C7;
+}
+
+.contact-heading {
+    color: #993300;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-text {
+    margin: 0;
+    color: #F28C28;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2C3E50;
+    color: #FAFAFA;
+    padding: 2rem;
+}
+
+.footer-list-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 1rem 0.5rem 0 0.5rem;
+    background-color: #F28C28;
+    transition: background-color 0.3s;
+}
+
+.footer-list-items:hover {
+    background-color: #E67E22;
+}
+
+.footer-links {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-menu {
+    padding: 0;
+}
+
+.footer-menu .footer-menu-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+/* utility classes */
+.greet-heading {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.my-heading {
+    font-size: 2.8rem;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+    color: inherit;
+}
+
+.sub-heading {
+    margin: 0;
+    font-size: 1rem;
+    color: #BDC3C7;
+    font-weight: 300;
+}
+
+.links:hover {
+    border-bottom: 2px solid #F28C28;
+    color: #E67E22;
+}
+
+.links {
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+.heading-span {
+    font-weight: 700;
+    color: #E67E22;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.small-para {
+    font-size: 15px;
+    color: #E67E22;
+    line-height: 1.6;
+}
+
+.lead-para {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.blue-text {
+    color: #2C3E50;
+}

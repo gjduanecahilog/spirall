@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS CAHILOG.css">
+    <link rel="stylesheet" href="CSS CAHILOG.css">
+</head>
+
+<body>
+    <!-- Navbar header section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-heading">GJ Duane Cahilog</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars hamburger-icon"></i>
+                <i class="fas fa-times cross-icon"></i>
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list-items">
+                        <a class="links" href="#home">
+                            Home</a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#projects">
+                            Projects</a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#about">
+                            About </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#skills">
+                            Skills </a>
+                    </li>
+                    <li class="menu-list-items">
+                        <a class="links" href="#contact"> Contact Me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Main hero banner -->
+    <section id="home" class="home">
+        <div class="intro">
+            <div class="headings">
+                <h3 class="greet-heading">Hello, I'm</h3>
+                <h1 class="my-heading">GJ Duane Cahilog</h1>
+                <h4 class="sub-heading">
+                    A First-Year CS student.
+                </h4>
+            </div>
+            <div class="intro-buttons">
+                <a href="#about" class="btn common-btn">About Me</a>
+                <a href="#projects" class="btn ghost-btn">My Projects</a>
+            </div>
+        </div>
+    </section>
+    <!-- Project Section -->
+    <section class="projects" id="projects">
+        <div class="projects-heading">
+            <h1 class="my-heading text-center">Featured Console Projects</h1>
+        </div>
+        <div class="projects-content">
+            <div class="my-row">
+                
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="hangman.png" alt="Screenshot of a C Language Hangman Game in a console window">
+                        </div>
+                        <h3 class="greet-heading blue-text">1. Console Hangman Game (C)</h3>
+                        <p class="small-para">
+                            A classic word-guessing game implemented in the C console. This project demonstrates proficiency in string manipulation, array handling, looping structures, and robust game state logic within a terminal environment.
+                        </p>
+                        <p class="project-tech-tags">
+                            <strong>Tech:</strong> C, Standard I/O, Strings/Arrays, Conditional Logic
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/gjduanecahilog/Hangman-in-C.git" class="btn ghost-btn small-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+                            <a href="https://github.com/gjduanecahilog/Hangman-in-C/commit/b0a9dd87a38ddf5981527ece81e6431be4b36948" class="btn common-btn small-btn" target="_blank">
+                                <i class="fas fa-file-alt"></i> Instructions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="snake.png" alt="Screenshot of a C Language turn-based Snake Game in a console window">
+                        </div>
+                        <h3 class="greet-heading blue-text">2. Snake Game (C)</h3>
+                        <p class="small-para">
+                            A foundational implementation of the classic Snake game. This project focuses on managing 2D array state, implementing coordinate manipulation using structs, and detecting crucial collision events (wall and self-collision).
+                        </p>
+                        <p class="project-tech-tags">
+                            <strong>Tech:</strong> C, Structs, 2D Arrays, Game Loop, System Utilities
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/gjduanecahilog/Snake-Game-in-C/blob/main/snake.c" class="btn ghost-btn small-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+                            <a href="https://github.com/gjduanecahilog/Snake-Game-in-C/blob/main/README.md" class="btn common-btn small-btn" target="_blank">
+                                <i class="fas fa-file-alt"></i> Instructions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="my-col">
+                    <div class="my-card port-card">
+                        <div class="image">
+                            <img src="./tictactoe.png" alt="Screenshot of a C Language Tic-Tac-Toe Game grid">
+                        </div>
+                        <h3 class="greet-heading blue-text">3. Tic-Tac-Toe Game (C)</h3>
+                        <p class="small-para">
+                            A fully functional two-player game demonstrating mastery of 2D array indexing and comprehensive conditional logic to efficiently check for the 8 distinct winning combinations (rows, columns, and diagonals).
+                        </p>
+                        <p class="project-tech-tags">
+                            <strong>Tech:</strong> C, 2D Arrays, Functions, Conditional Logic, Player Input Handling
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/gjduanecahilog/Tic-Tac-Toe-in-C/blob/main/tictactoe.c" class="btn ghost-btn small-btn" target="_blank">
+                                <i class="fab fa-github"></i> GitHub Repo
+                            </a>
+                            <a href="https://github.com/gjduanecahilog/Tic-Tac-Toe-in-C/blob/main/README.md" class="btn common-btn small-btn" target="_blank">
+                                <i class="fas fa-file-alt"></i> Instructions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h1 class="my-heading">About Me</h1>
+            <p class="lead-para">
+                Hello! I am GJ Duane Cahilog,
+                a first-year computer science student
+                at Caraga State University.
+                One thing about me, I like playing
+                video games to the point that I sometimes
+                forget when to sleep. Sounds like what a
+                typical gamer would say, huh?
+            </p>
+            <p>
+                A game that I love the most would be
+                Reverse: 1999 by Bluepoch. Cannot blame
+                them though, art and story-telling is
+                top-tier there, that I want to indulge
+                myself with their main stories and
+                character stories. I love when a game
+                is exceptionally great at character
+                design that I wanted to become great
+                at doing those things too.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="Barcarola.png" alt="Barcarola">
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-heading">
+            <h1 class="my-heading text-center">My Core Skills & Competencies</h1>
+        </div>
+        <div class="skills-content">
+            <div class="my-row">
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text text-center" style="width: 100%; margin-bottom: 1.5rem;">Technical Skill</h3>
+                        
+                        <div class="skill-bar-container">
+                            <div class="skill-name">
+                                <span>Web Development</span>
+                                <span>35%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-level" style="width: 35%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container">
+                            <div class="skill-name">
+                                <span>UX/UI Design</span>
+                                <span>30%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-level" style="width: 30%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container">
+                            <div class="skill-name">
+                                <span>Language Proficiency</span>
+                                <span>20%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-level" style="width: 20%;"></div>
+                            </div>
+                        </div>
+
+                        <p class="small-para" style="margin-top: 1rem; color: #E67E22;">
+                            Still learning more of those technical skills.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text text-center" style="width: 100%; margin-bottom: 1.5rem;">Soft Skills</h3>
+                        
+                        <ul class="soft-skills-list">
+                            <li><i class="fa-solid fa-check-circle"></i> Problem Solving</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Team Collaboration</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Adaptability</li>
+                            <li><i class="fa-solid fa-check-circle"></i> Communication (Written)</li>
+                        </ul>
+                        <p class="small-para" style="margin-top: 1rem; color: #E67E22;">
+                            Highly motivated to contribute positively in a team environment.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="my-col">
+                    <div class="my-card">
+                        <div class="icon">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <h3 class="greet-heading blue-text text-center" style="width: 100%; margin-bottom: 1.5rem;">Hobbies & Interests</h3>
+                        
+                        <ul class="soft-skills-list">
+                            <li><i class="fa-solid fa-puzzle-piece"></i> Competitive Gaming</li>
+                            <li><i class="fa-solid fa-pen-fancy"></i> Digital Art & Design</li>
+                            <li><i class="fa-solid fa-book-open"></i> Reading Novels</li>
+                            <li><i class="fa-solid fa-music"></i> Listening Music</li>
+                            <li><i class="fa-solid fa-video"></i> Editing</li>
+                        </ul>
+
+                        <p class="small-para" style="margin-top: 1rem; color: #E67E22;">
+                            Interests like gaming and art feed into my passion for user experience design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact me section -->
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading">Get In Touch</h1>
+                <form class="contact-form" action="https://formspree.io/f/mqarwgad" method="POST">
+                    <input class="form-controls" type="text" placeholder="Your Name">
+                    <input class="form-controls" type="text" placeholder="Your Email">
+                    <input class="form-controls" type="text" placeholder="Your Phone">
+                    <textarea class="form-controls" placeholder="Write your message" name="message" id="" cols="30"
+                        rows="10">
+                      </textarea>
+                    <input class="form-btn btn common-btn" type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-details">
+                <h1 class="greet-heading">My Contact Details</h1>
+                <div class="details">
+                    <h5 class="contact-heading">EMAIL</h5>
+                    <p class="contact-text">gjduane.cahilog@carsu.edu.ph</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">PHONE</h5>
+                    <p class="contact-text">+63 9078014440</p>
+                </div>
+                <div class="details">
+                    <h5 class="contact-heading">ADDRESS</h5>
+                    <p class="contact-text">Surigao City, SDN</p>
+                    <p>Nueva Ext., Brgy Taft.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2023 All rights reserved |
+                This portfolio website template is created
+                by GeeksforGeeks.
+            </h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.facebook.com/spirxl">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://x.com/_spiiirxl">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.instagram.com/_spiiirxl/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.linkedin.com/in/gj-duane-cahilog-132952399/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
